@@ -1,0 +1,16 @@
+1. hdfs dfs -mkdir /projects
+2. hdfs dfs -mkdir /projects/task_2
+3. hdfs dfs -rm -skipTrash
+4. hdfs dfs -touchz /projects/task_2/ex_file.txt
+5. hdfs dfs -rm -r /projects/task_2/ex_file.txt
+6. hdfs dfs -rm -r /projects/task_2
+
+1. hdfs dfs -cp /projects/task_2/ex_file.txt /projects/new_task_2
+2. hdfs dfs -cat /projects/task_2/ex_file.txt
+3. hdfs dfs -tail /projects/task_2/ex_file.txt
+4. hdfs dfs -head /projects/task_2/ex_file.txt
+5. hdfs dfs -put /projects/task_2/ex_file.txt /projects/new_task_2
+
+1. hdfs dfs -setrep -w 4 /projects/task_2/ex_file.txt
+2. hdfs fsck /projects/task_2/ex_file.txt -files -blocks -locations
+3. hdfs fsck -blockId blk_1039721927
